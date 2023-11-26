@@ -88,6 +88,10 @@ export default class BlockMainPartners extends mixins(PathMixin, Vue) {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include tablet {
+    align-items: unset;
+  }
 }
 
 .main-partners__text {
@@ -107,9 +111,7 @@ export default class BlockMainPartners extends mixins(PathMixin, Vue) {
   }
 
   ::v-deep p + p {
-    @include tablet {
-      margin-top: 8px;
-    }
+    margin-top: 8px;
   }
 }
 
@@ -170,11 +172,13 @@ export default class BlockMainPartners extends mixins(PathMixin, Vue) {
 }
 
 .main-partners__controls {
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin-top: 31px;
 
   @include tablet {
-    display: flex;
+    justify-content: unset;
     align-items: center;
     gap: 19px;
     margin-top: 24px;

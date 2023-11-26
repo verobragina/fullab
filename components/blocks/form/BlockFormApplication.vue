@@ -107,7 +107,7 @@ export default class BlockFormApplication extends mixins(RecaptchaMixin, Vue) {
     formData.append('email', self.formData.email)
     formData.append('comment', self.formData.comment)
 
-    await this.$axios.$post(`api/application`, formData).then(() => {
+    await this.$axios.$post(`/form.php`, formData).then(() => {
       self.success = true
       self.error = false
       self.clearData()

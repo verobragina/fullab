@@ -14,7 +14,7 @@
           </div>
           <div class="block-contacts__contacts-item">
             <base-svg icon="tg-flat"/>
-            <a :href="data.socials[0].link" target="_blank" v-html="data.socials[0].link"></a>
+            <a :href="data.socials[0].link" target="_blank" v-html="data.socials[0].name"></a>
           </div>
           <div class="block-contacts__contacts-item">
             <base-svg icon="pin"/>

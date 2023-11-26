@@ -66,7 +66,7 @@ export default class BlockMainPrice extends mixins(PathMixin, Vue) {
     }
 
     @include phone {
-      top: 30px;
+      top: 20px;
       width: 237px;
       height: 64px;
     }
