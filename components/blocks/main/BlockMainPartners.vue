@@ -3,7 +3,7 @@
     <div class="container">
       <div class="main-partners__inner">
         <div class="main-partners__info">
-          <p class="main-partners__text" v-html="data.text"></p>
+          <div class="main-partners__text" v-html="data.text"></div>
           <div class="main-partners__controls">
             <div class="main-promo__button visible-sm">
               <base-button theme="green" @click="$modal.show('application-modal')">

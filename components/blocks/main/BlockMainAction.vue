@@ -2,13 +2,13 @@
   <section class="main-action" v-if="data">
     <div class="container">
       <div class="main-action__inner">
-        <p class="main-action__text" v-html="data.text"></p>
+        <div class="main-action__text" v-html="data.text"></div>
         <div class="main-action__button">
           <base-button theme="green" @click="$modal.show('application-modal')">
             {{ data.button }}
           </base-button>
         </div>
-        <p class="main-action__text main-action__text--bold visible-sm" v-html="data.textMobile"></p>
+        <div class="main-action__text main-action__text--bold visible-sm" v-html="data.textMobile"></div>
       </div>
     </div>
   </section>

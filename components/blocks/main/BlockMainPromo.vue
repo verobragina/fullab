@@ -3,8 +3,8 @@
     <div class="container">
       <div class="main-promo__inner">
         <h1 class="main-promo__title" v-html="data.name"/>
-        <p class="main-promo__text" v-html="data.text"></p>
-        <p class="main-promo__text visible-sm" v-html="data.textMobile"></p>
+        <div class="main-promo__text" v-html="data.text"></div>
+        <div class="main-promo__text visible-sm" v-html="data.textMobile"></div>
         <div class="main-promo__button hidden-sm">
           <base-button theme="green" @click="$modal.show('application-modal')">
             {{ data.button }}
