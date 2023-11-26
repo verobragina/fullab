@@ -3,9 +3,9 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__top">
-          <nuxt-link to="/" class="footer__logo">
+          <base-link to="/" class="footer__logo">
             <base-svg icon="logo-lg"/>
-          </nuxt-link>
+          </base-link>
           <div class="footer__socials">
             <a class="footer__socials-item" :href="item.link" v-for="item in $store.state.base.socials">
               <base-svg :icon="item.code"/>
@@ -13,7 +13,7 @@
           </div>
         </div>
         <a href="#" class="footer__link">
-          <span>made by Advanced Solutions</span>
+          <span v-html="$store.state.base.madeBy"></span>
         </a>
       </div>
     </div>
@@ -33,10 +33,6 @@ import {SocialsElement} from "~/models/socials";
   },
 })
 export default class LayoutBaseFooter extends mixins(DetectorMixin, Vue) {
-  socials: Array<SocialsElement> = [{"code": "vk", "link": "#"}, {"code": "wa", "link": "#"}, {
-    "code": "tg",
-    "link": "#"
-  }]
 
 }
 </script>

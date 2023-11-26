@@ -5,8 +5,12 @@
       <p class="road-item__text" v-html="item.text"></p>
     </div>
     <div class="road-item__num" :class="{'road-item__num--centered': isPersonal}">
-      <span v-html="num" v-if="!isFinal"></span>
-      <base-svg :icon="num" v-else/>
+      <no-ssr>
+        <span v-html="num" v-if="!isFinal"></span>
+        <template v-else>
+          <base-svg icon="check-result"/>
+        </template>
+      </no-ssr>
     </div>
   </div>
 </template>
@@ -113,7 +117,7 @@ export default class BlockMainRoad extends mixins(PathMixin, Vue) {
 
     @include phone {
       grid-template-columns: 1fr 50px;
-      grid-column-gap: 10px!important;
+      grid-column-gap: 10px !important;
       margin-left: -30px;
       margin-right: -30px;
       padding: 15px 30px;

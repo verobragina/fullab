@@ -2,7 +2,7 @@
   <div class="header-menu">
     <ul class="header-menu__list">
       <li class="header-menu__list-item" v-for="item in $store.state.base.menu">
-        <nuxt-link class="header-menu__link" :to="item.link" v-html="item.name"></nuxt-link>
+        <button class="header-menu__link" @click="handleLinkClick(item.link)" v-html="item.name"></button>
       </li>
     </ul>
   </div>
@@ -21,7 +21,10 @@ import PathMixin from "~/mixins/path";
   },
 })
 export default class LayoutBaseMenu extends mixins(PathMixin, Vue) {
-
+  handleLinkClick(link: string) {
+    this.$modal.hide('menu-modal')
+    this.$router.push(link)
+  }
 }
 </script>
 
@@ -41,6 +44,7 @@ export default class LayoutBaseMenu extends mixins(PathMixin, Vue) {
 }
 
 .header-menu__link {
+  @include button-reset;
   font-family: $font-family-secondary;
   font-size: 20px;
   font-style: normal;

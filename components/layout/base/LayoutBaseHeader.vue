@@ -2,9 +2,9 @@
   <header class="page__header header" v-if="$store.state.base">
     <div class="container">
       <div class="header__top">
-        <nuxt-link to="/" class="header__logo">
+        <base-link to="/" class="header__logo">
           <base-svg icon="logo"/>
-        </nuxt-link>
+        </base-link>
         <nav class="header__nav hidden-sm">
           <ul class="header__nav-list">
             <li class="header__nav-item">
@@ -142,7 +142,7 @@ export default class LayoutBaseHeader extends Vue {
 
   @include phone {
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 }
 
