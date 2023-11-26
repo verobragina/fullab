@@ -40,6 +40,10 @@ export default class BlockMainAboutItem extends mixins(PathMixin, Vue) {
   grid-gap: 30px;
   justify-content: center;
 
+  @include tablet {
+    justify-content: unset;
+  }
+
   @include phone {
     grid-gap: 15px;
   }

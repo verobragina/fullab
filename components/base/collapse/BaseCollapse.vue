@@ -188,6 +188,10 @@ export default class BaseCollapse extends mixins(Vue) {
       &::marker {
         font-size: 20px;
         text-align: center!important;
+
+        @include phone {
+          font-size: 14px;
+        }
       }
     }
 

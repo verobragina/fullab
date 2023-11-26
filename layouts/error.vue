@@ -4,8 +4,7 @@
       <h1 class="error-page__title">404</h1>
       <p class="error-page__subtitle">Страница не найдена</p>
       <div class="error-page__controls">
-        <base-button raw-link="/">На главную</base-button>
-        <base-button raw-link="/catalog/" :bordered="true">В каталог анализов</base-button>
+        <base-button raw-link="/" theme="green">На главную</base-button>
       </div>
     </div>
   </main>
@@ -49,6 +48,7 @@ export default class ErrorLayout extends mixins(Vue) implements ComponentOptions
 }
 
 .error-page__title {
+  font-family: $font-family-secondary;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 100px;
