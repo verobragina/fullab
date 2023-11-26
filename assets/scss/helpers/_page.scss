@@ -1,0 +1,24 @@
+.page {
+  height: 100vh;
+}
+
+.page__wrapper {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  min-height: 100%;
+}
+
+.page__header,
+.page__main,
+.page__footer {
+  min-width: 0;
+}
+
+.page__main {
+  overflow: hidden;
+}
+
+
+.page__section {
+
+}

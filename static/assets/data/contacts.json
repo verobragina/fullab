@@ -1,0 +1,19 @@
+{
+  "id": "contacts",
+  "title": "Контакты",
+  "email": "info@fullab.ru",
+  "phone": "89150507108",
+  "socials": [
+    {
+      "code": "tg",
+      "link": "https://t.me/fullabmsk"
+    }
+  ],
+  "address": {
+    "id": 1,
+    "name": "г. Москва, Рязанский проспект, <br> д. 4А, стр. 2",
+    "coordinates": [55.728489, 37.748116],
+    "link": "https://yandex.ru/maps/-/CCUvF8tvPD"
+  },
+  "button": "Заказать обратный звонок"
+}

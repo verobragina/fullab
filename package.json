@@ -1,0 +1,48 @@
+{
+  "name": "Fullab",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth-next": "^5.0.0-1667386184.dfbbb54",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.3.1",
+    "@nuxtjs/recaptcha": "^1.1.2",
+    "@nuxtjs/svg-sprite": "^0.5.2",
+    "@types/vue2-datepicker": "^3.3.1",
+    "cookie-universal-nuxt": "^2.2.2",
+    "core-js": "^3.25.3",
+    "nuxt": "^2.15.8",
+    "nuxt-property-decorator": "^2.9.1",
+    "nuxt-user-agent": "^1.2.2",
+    "nuxt-video-player": "^1.0.17",
+    "sass": "^1.60.0",
+    "sass-loader": "^10",
+    "swiper": "^9.1.1",
+    "vee-validate": "^3.4.5",
+    "vue": "^2.7.10",
+    "vue-click-outside": "^1.1.0",
+    "vue-inputmask": "^0.2.1",
+    "vue-js-modal": "^2.0.1",
+    "vue-select": "^3.20.2",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10",
+    "vue-yandex-maps": "^0.11.13",
+    "vue-youtube": "^1.4.0",
+    "vue2-collapse": "^1.0.15",
+    "vue2-datepicker": "^3.11.1",
+    "vue2-perfect-scrollbar": "^1.5.56"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/storybook": "^4.3.2",
+    "@storybook/preset-typescript": "^3.0.0",
+    "ts-node": "^10.9.1"
+  }
+}

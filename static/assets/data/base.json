@@ -1,0 +1,40 @@
+{
+  "title": "Fullab",
+  "menu": [
+    {
+      "name": "О компании",
+      "link": "#about"
+    },
+    {
+      "name": "Услуги",
+      "link": "#services"
+    },
+    {
+      "name": "Цены",
+      "link": "#price"
+    },
+    {
+      "name": "Преимущества",
+      "link": "#advantages"
+    },
+    {
+      "name": "FAQ",
+      "link": "#faq"
+    },
+    {
+      "name": "Контакты",
+      "link": "#contacts"
+    }
+  ],
+  "phone": "+7-915-050-71-08",
+  "socials": [
+    {
+      "code": "wa",
+      "link": "#"
+    },
+    {
+      "code": "tg",
+      "link": "t.me/fullabmsk"
+    }
+  ]
+}

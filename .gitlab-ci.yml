@@ -1,0 +1,20 @@
+image: alpine
+stages:
+  - deploy
+Deploy to front.moment.air-tech.agency:
+  stage: deploy
+  before_script:
+    - apk add --update openssh-client bash
+    - mkdir -p ~/.ssh
+    - echo "$SSH_KEY_DEV" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 700 ~/.ssh/id_rsa
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+    - ssh-keyscan -H 'gitlab.com' >> ~/.ssh/known_hosts
+    - apk add --update --no-cache openssh sshpass rsync
+    - export SSHPASS=$SSH_KEY_DEV
+  script:
+    - ssh -o StrictHostKeyChecking=no $SSH_USER_DEV@$SSH_SERVER_DEV "cd $SSH_PATH_DEV && ./build.sh"
+  only:
+    - main
+  when: always

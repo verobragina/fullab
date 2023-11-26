@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  @media #{$tablet} {
+    padding: 0 36px;
+  }
+
+  @media #{$phone} {
+    padding: 0 30px;
+  }
+
+  &--lg {
+    max-width: 1207px;
+  }
+
+  &--md {
+    max-width: 1114px;
+  }
+
+  &--xs {
+    max-width: 648px;
+  }
+}

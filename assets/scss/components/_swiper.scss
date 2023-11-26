@@ -1,0 +1,30 @@
+.swiper-pagination {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    margin: 0 8px !important;
+    background: transparent;
+    opacity: 1;
+    border: 1px solid $blue;
+    transition: $base-transition;
+
+    @media #{$phone} {
+      width: 13px;
+      height: 13px;
+    }
+
+    @include hover {
+      border: 1px solid $white;
+    }
+
+    &.swiper-pagination-bullet-active {
+      background: $white;
+      border-color: $white;
+    }
+  }
+}
