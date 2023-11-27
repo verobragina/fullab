@@ -198,6 +198,11 @@ export default class BlockMainPartners extends mixins(PathMixin, Vue) {
   display: block;
   width: 72px;
   height: 72px;
+  transition: $base-transition;
+
+  @include hover {
+    transform: translateY(-5px);
+  }
 
   svg {
     width: 100%;
