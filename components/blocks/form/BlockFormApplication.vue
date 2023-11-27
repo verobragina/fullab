@@ -80,7 +80,7 @@ export default class BlockFormApplication extends mixins(RecaptchaMixin, Vue) {
     },
     comment: {
       as: 'comment',
-      placeholder: 'Коментарий',
+      placeholder: 'Комментарий',
       name: 'comment',
       type: 'text',
       validateRules: {

@@ -18,8 +18,10 @@
         </div>
         <ul class="main-partners__list hidden-sm">
           <li class="main-partners__list-item" v-for="item in partners">
-            <img :src="item.picture" :alt="item.name">
-            <base-svg :icon="item.code" v-if="false"/>
+            <a :href="item.link" target="_blank" class="main-partners__list-link">
+              <img :src="item.picture" :alt="item.name">
+              <base-svg :icon="item.code" v-if="false"/>
+            </a>
           </li>
         </ul>
       </div>
@@ -43,14 +45,14 @@ export default class BlockMainPartners extends mixins(PathMixin, Vue) {
   data!: any
 
   partners: Array<any> = [
-    {picture: '/assets/images/partners/ym.png', name: 'ym', code: 'ym'},
-    {picture: '/assets/images/partners/wb.png', name: 'wb', code: 'wb'},
-    {picture: '/assets/images/partners/ozon.png', name: 'ozon', code: 'ozon'},
-    {picture: '/assets/images/partners/sm.png', name: 'sm', code: 'sm'},
-    {picture: '/assets/images/partners/pinduo.png', name: 'pinduo', code: 'pinduo'},
-    {picture: '/assets/images/partners/alibaba.png', name: 'alibaba', code: 'alibaba'},
-    {picture: '/assets/images/partners/taobao.png', name: 'taobao', code: 'taobao'},
-    {picture: '/assets/images/partners/poizon.png', name: 'poizon', code: 'poizon'},
+    {picture: '/assets/images/partners/ym.png', name: 'ym', code: 'ym', link: "https://market.yandex.ru/"},
+    {picture: '/assets/images/partners/wb.png', name: 'wb', code: 'wb', link: "https://www.wildberries.ru/"},
+    {picture: '/assets/images/partners/ozon.png', name: 'ozon', code: 'ozon', link: "https://www.ozon.ru/"},
+    {picture: '/assets/images/partners/sm.png', name: 'sm', code: 'sm', link: "https://sbermarket.ru/"},
+    {picture: '/assets/images/partners/pinduo.png', name: 'pinduo', code: 'pinduo', link: "https://m.pinduoduo.com/"},
+    {picture: '/assets/images/partners/alibaba.png', name: 'alibaba', code: 'alibaba', link: "https://www.alibaba.com/"},
+    {picture: '/assets/images/partners/taobao.png', name: 'taobao', code: 'taobao', link: "https://world.taobao.com/"},
+    {picture: '/assets/images/partners/poizon.png', name: 'poizon', code: 'poizon', link: "https://www.poizon.com/"},
   ]
 }
 </script>
@@ -192,7 +194,7 @@ export default class BlockMainPartners extends mixins(PathMixin, Vue) {
   grid-gap: 40px;
 }
 
-.main-partners__list-item {
+.main-partners__list-link {
   display: block;
   width: 72px;
   height: 72px;

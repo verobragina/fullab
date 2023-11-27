@@ -5,7 +5,7 @@
         <h2 class="page__title page__title--centered" v-html="data.title"></h2>
         <ul class="block-faq__list">
           <li class="block-faq__list-item" v-for="item in data.list">
-            <base-collapse :item="item" :initial-open="true"/>
+            <base-collapse :item="item" :initial-open="false"/>
           </li>
         </ul>
       </div>
