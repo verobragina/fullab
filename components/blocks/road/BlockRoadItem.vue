@@ -116,7 +116,7 @@ export default class BlockMainRoad extends mixins(PathMixin, Vue) {
     }
 
     @include phone {
-      grid-template-columns: 1fr 50px;
+      grid-template-columns: 1fr 40px!important;
       grid-column-gap: 10px !important;
       margin-left: -30px;
       margin-right: -30px;

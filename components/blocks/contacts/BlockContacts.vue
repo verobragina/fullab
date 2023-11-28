@@ -75,11 +75,12 @@ export default class BlockContacts extends mixins(PathMixin, Vue) {
 }
 
 .contacts-page__map {
-  min-height: 616px;
   height: 100%;
+  min-height: 616px;
 
   @include tablet {
-    min-height: 300px;
+    height: 300px;
+    min-height: unset;
   }
 }
 

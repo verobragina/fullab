@@ -19,7 +19,7 @@
           <base-button size="medium" theme="blue" button-type="submit">Отправить заявку</base-button>
         </div>
         <div class="application__form-group">
-          <a href="#" class="application__link">Политика конфиденциальности</a>
+          <a href="/assets/documents/policy.pdf" target="_blank" class="application__link">Политика конфиденциальности</a>
         </div>
       </form>
     </ValidationObserver>

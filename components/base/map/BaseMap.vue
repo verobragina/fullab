@@ -65,8 +65,7 @@ export default class BaseMap extends mixins(DetectorMixin, Vue) {
   }
 
   async mounted() {
-    const settings = { lang: 'en_US' };
-    await loadYmap(settings);
+
   }
 };
 </script>

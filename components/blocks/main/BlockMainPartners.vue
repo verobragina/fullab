@@ -73,7 +73,7 @@ export default class BlockMainPartners extends mixins(PathMixin, Vue) {
 
 .main-partners__inner {
   display: grid;
-  grid-template-columns: 1fr 410px;
+  grid-template-columns: 1fr 418px;
   grid-column-gap: 32px;
 
   @include tablet {

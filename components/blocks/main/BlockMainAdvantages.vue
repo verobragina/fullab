@@ -64,8 +64,16 @@ export default class BlockMainAction extends mixins(PathMixin, Vue) {
 .main-advantages__block {
   display: grid;
   grid-template-columns: 55% 45%;
-  grid-column-gap: 70px;
+  grid-column-gap: 4.91vw;
   margin-top: 70px;
+
+  @media (min-width: 1441px) {
+    grid-column-gap: 70px;
+  }
+
+  @media (max-width: 1199px) {
+    grid-column-gap: 2.91vw;
+  }
 
   @include tablet {
     grid-template-columns: 1fr;
