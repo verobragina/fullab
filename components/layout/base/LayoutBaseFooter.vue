@@ -7,7 +7,7 @@
             <base-svg icon="logo-lg"/>
           </base-link>
           <div class="footer__socials">
-            <a class="footer__socials-item" :href="item.link" v-for="item in $store.state.base.socials">
+            <a class="footer__socials-item" :href="item.link" target="_blank" v-for="item in $store.state.base.socials">
               <base-svg :icon="item.code"/>
             </a>
           </div>

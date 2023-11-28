@@ -177,7 +177,7 @@ export default class BlockMainPartners extends mixins(PathMixin, Vue) {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 31px;
+  margin-top: 43px;
 
   @include tablet {
     justify-content: unset;
