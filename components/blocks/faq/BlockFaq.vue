@@ -17,6 +17,7 @@
 import Vue from 'vue'
 import {Component, mixins, Prop} from "nuxt-property-decorator"
 import PathMixin from "~/mixins/path";
+import {FaqElement} from "~/models/faq";
 
 @Component({
   components: {
@@ -27,7 +28,7 @@ import PathMixin from "~/mixins/path";
 })
 export default class BlockFaq extends mixins(PathMixin, Vue) {
   @Prop({required: true})
-  data!: any
+  data!: FaqElement
 }
 </script>
 

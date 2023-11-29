@@ -54,8 +54,8 @@ export default class BlockMainRoad extends mixins(PathMixin, Vue) {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../assets/scss/helpers/_variables.scss";
-@import "../../../assets/scss/helpers/_mixins.scss";
+@import "../../../assets/scss/helpers/variables";
+@import "../../../assets/scss/helpers/mixins";
 
 .road-item {
   position: relative;

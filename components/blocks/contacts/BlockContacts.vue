@@ -43,6 +43,7 @@
 import Vue from 'vue'
 import {Component, mixins, Prop} from "nuxt-property-decorator"
 import PathMixin from "~/mixins/path";
+import {ContactsElement} from "~/models/contacts";
 
 @Component({
   components: {
@@ -53,7 +54,7 @@ import PathMixin from "~/mixins/path";
 })
 export default class BlockContacts extends mixins(PathMixin, Vue) {
   @Prop({required: true})
-  data!: any
+  data!: ContactsElement
 }
 </script>
 

@@ -39,7 +39,7 @@ import {Component} from "nuxt-property-decorator";
   },
 })
 export default class LayoutBaseHeader extends Vue {
-  isMenuActive: boolean = false
+
 }
 </script>
 

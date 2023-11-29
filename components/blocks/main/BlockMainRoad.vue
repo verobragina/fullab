@@ -32,13 +32,12 @@
 import Vue from 'vue'
 import {Component, mixins, Prop} from "nuxt-property-decorator"
 import PathMixin from "~/mixins/path";
-import BlockRoadItem from "~/components/blocks/road/BlockRoadItem.vue";
 
 @Component({
   components: {
-    BlockRoadItem,
     BaseSvg: () => import('~/components/base/svg/BaseSvg.vue'),
     BaseButton: () => import('~/components/base/button/BaseButton.vue'),
+    BlockRoadItem: () => import('~/components/blocks/main/BlockMainRoadItem.vue')
   },
 })
 export default class BlockMainRoad extends mixins(PathMixin, Vue) {
