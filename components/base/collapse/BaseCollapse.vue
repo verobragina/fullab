@@ -116,6 +116,7 @@ export default class BaseCollapse extends mixins(Vue) {
   text-transform: uppercase;
   color: $green;
   text-align: left;
+  text-shadow: 1px 0 0 rgb(24, 50, 91);
 
   @include tablet {
     font-size: 24px;

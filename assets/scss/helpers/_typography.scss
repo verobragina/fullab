@@ -61,13 +61,14 @@ a, button {
     font-size: 38px;
   }
 
-  @include phone{
+  @include phone {
     font-size: 24px;
     line-height: normal;
   }
 
   &--green {
     color: $green;
+    text-shadow: 1px 0 0 rgb(24, 50, 91);
   }
 
   &--light {

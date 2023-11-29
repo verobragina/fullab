@@ -160,6 +160,7 @@ export default class BlockMainPromo extends mixins(PathMixin, Vue) implements Co
   letter-spacing: 0.17px;
   color: $green;
   margin-top: 58px;
+  text-shadow: 1px 0 0 rgb(24, 50, 91);
 }
 
 </style>
