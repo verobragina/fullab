@@ -1,5 +1,5 @@
 <template>
-  <section class="main-promo" v-if="data">
+  <section class="main-promo" :id="data.id" v-if="data">
     <div class="container">
       <div class="main-promo__inner">
         <h1 class="main-promo__title" v-html="data.name"/>
