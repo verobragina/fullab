@@ -12,7 +12,7 @@
             </a>
           </div>
         </div>
-        <a href="#" class="footer__link">
+        <a href="#" class="footer__link" v-if="false">
           <span v-html="$store.state.base.madeBy"></span>
         </a>
       </div>

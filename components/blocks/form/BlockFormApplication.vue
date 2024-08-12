@@ -19,7 +19,8 @@
           <base-button size="medium" theme="blue" button-type="submit">Отправить заявку</base-button>
         </div>
         <div class="application__form-group">
-          <a href="/assets/documents/policy.pdf" target="_blank" class="application__link">Политика конфиденциальности</a>
+          <a href="/assets/documents/policy.pdf" target="_blank" class="application__link">Политика
+            конфиденциальности</a>
         </div>
       </form>
     </ValidationObserver>
@@ -98,7 +99,6 @@ export default class BlockFormApplication extends mixins(RecaptchaMixin, Vue) {
 
   async onSubmit() {
     const self = this;
-    const token = await this.recaptchaToken()
 
     const formData = new FormData()
 
@@ -107,13 +107,14 @@ export default class BlockFormApplication extends mixins(RecaptchaMixin, Vue) {
     formData.append('email', self.formData.email)
     formData.append('comment', self.formData.comment)
 
-    await this.$axios.$post(`/form.php`, formData).then(() => {
+    await this.$axios.$post(`${ window.location.origin }/form.php`, formData).then(() => {
       self.success = true
       self.error = false
       self.clearData()
       self.$modal.hide('application-modal')
     }).catch((error) => {
-      this.errorText = error.response.data.message ?? 'Не удалось отправить заявку'
+      window.alert(error.name)
+      this.errorText = error?.response?.data?.message ?? 'Не удалось отправить заявку'
       self.error = true
     })
   }
