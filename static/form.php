@@ -37,7 +37,6 @@ if ($check) {
     $url = 'https://' . $_SERVER['HTTP_HOST'];
 
     $to = "Info@fullab.ru";
-    $to2 = "verobragina@ya.ru";
 
     $subject = "Форма свяжитесь с нами с сайта " . $url;
 
@@ -51,18 +50,6 @@ if ($check) {
     $headers = "Content-type: text/html; text/html;charset=utf-8  \r\n";
 
     if (mail($to, $subject, $message, $headers)) {
-        $arResult = [
-            'status' => true,
-            'message' => 'Форма отправлена'
-        ];
-    } else {
-        $arResult = [
-            'status' => true,
-            'message' => 'Форма не отправлена'
-        ];
-    }
-    
-    if (mail($to2, $subject, $message, $headers)) {
         $arResult = [
             'status' => true,
             'message' => 'Форма отправлена'
