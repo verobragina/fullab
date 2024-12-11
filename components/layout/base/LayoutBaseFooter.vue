@@ -15,6 +15,9 @@
         <a href="#" class="footer__link" v-if="false">
           <span v-html="$store.state.base.madeBy"></span>
         </a>
+        <div style="display: none; position: absolute; height: 0; width: 0; opacity: 0; top: 0; left: 0;">
+          Developed in ssha.tech
+        </div>
       </div>
     </div>
   </footer>
